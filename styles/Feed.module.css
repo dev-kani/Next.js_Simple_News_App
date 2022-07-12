@@ -18,9 +18,13 @@
 }
 
 .post h1 {
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   text-align: center;
+}
+
+.post p {
+  margin: 15px 0;
 }
 
 .paginator {
