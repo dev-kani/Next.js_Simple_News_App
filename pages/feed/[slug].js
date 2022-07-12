@@ -4,7 +4,7 @@ import styles from '../../styles/Feed.module.css'
 
 const Feed = ({ pageNumber, articles }) => {
   const router = useRouter()
-  console.log(articles, pageNumber)
+  // console.log(articles, pageNumber)
   return (
     <Layout>
       <div className="pageContainer">
@@ -28,19 +28,16 @@ const Feed = ({ pageNumber, articles }) => {
           }}
             className={pageNumber === 1 ? styles.disabled : styles.active}
           > Previous Page
-
           </div>
 
-          <div># {pageNumber}</div>
+          <div>#{pageNumber}</div>
 
           <div onClick={() => {
             if (pageNumber < 5) { router.push(`/feed/${pageNumber + 1}`) }
           }}
             className={pageNumber === 5 ? styles.disabled : styles.active}
           > Next Page
-
           </div>
-
         </div>
       </div>
     </Layout>

@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
-import styles from '../styles/Toolbar.module.css'
+import styles from '../styles/Navbar.module.css'
 
-export const Toolbar = () => {
+export const Navbar = () => {
   const router = useRouter()
 
   return (
@@ -10,7 +10,7 @@ export const Toolbar = () => {
       <div onClick={() => router.push('/feed/1')}>Feed</div>
       <div onClick={() => router.push('/eom')}>EOM</div>
       <div
-        onClick={() => window.location.href = 'http://twitter.com'}>Twitter
+        onClick={() => (window.open('https://twitter.com/kani_euro'), '_blank')}>Twitter
       </div>
     </div>
   )

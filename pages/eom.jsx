@@ -29,13 +29,11 @@ const eom = ({ employee }) => {
   )
 }
 
-export const getServerSideProps = async pageContext => {
+export const getServerSideProps = async () => {
   const apiResponse = await fetch(
     'https://randomuser.me/api/?results=1'
   )
-
   const employee = await apiResponse.json()
-
   return {
     props: {
       employee

@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { Toolbar } from "./Toolbar"
+import { Navbar } from "./Navbar"
 
 const Layout = ({ title, children }) => {
   return (
@@ -7,7 +7,7 @@ const Layout = ({ title, children }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <Toolbar />
+      <Navbar />
       <div>
         {children}
       </div>
