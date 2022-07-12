@@ -1,0 +1,46 @@
+.pageContainer {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.eomTitle {
+  padding: 2rem 0;
+}
+
+.cardContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  /* background-color: aquamarine; */
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imgContainer img {
+  border-radius: 50%;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details h3:first-child,
+.details p:nth-child(3),
+.details p:nth-child(4) {
+  padding: 1rem 0;
+}
+
+.details p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.details p:nth-child(3) {
+  font-size: 18px;
+}
